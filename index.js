@@ -25,13 +25,13 @@ app.get('/api/token/:token_id', function(req, res) {
     'name': tokenId,
     'animation_url': `${person.imgurl}`,
     'attributes': {
-      'Eyes': person.Eyes,
-      'Earring': person.Earring,
-      'Chain': person.Chain,
-      'Clothes': person.Clothes,
-      'Hat': person.Hat,
-      'Mouth': person.Mouth,
-      'ButtPlug': person.ButtPlug
+      'Building Length': person.length,
+      'Building Width': person.width,
+      'Building Height': person.height,
+      'Building Square Footage': person.sq,
+      'Lot Length ': person.lotlength,
+      'Lot Width': person.lotwidth,
+      'Lot Square Footage': person.lotsq
     },
     'image': `${person.imgurl}`
   }
